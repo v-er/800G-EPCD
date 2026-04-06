@@ -33,9 +33,9 @@ To understand why this specific SiGe architecture is required, one must trace th
 
 ---
 
-### 3. The EIC Driver and TIA
+## 3. The EIC Driver and TIA
 
-#### 3.1 MZM Driver
+### 3.1 MZM Driver
 
 #### The Core Challenge
 A state-of-the-art Electronic IC (EIC) driver must solve the fundamental mismatch between the physical limitations of deep-submicron digital logic and the optical physics of Silicon Photonics. 
@@ -53,7 +53,7 @@ Analog design is governed by the Johnson Limit, a fundamental physical law stati
 The EIC driver must provide a massive voltage gain (translating $0.75V$ to $3V$) without sacrificing the $40 GHz$ analog bandwidth required for $56 GBaud$ PAM4. A standard Common-Emitter amplifier could provide the gain, but the parasitic base-to-collector capacitance would be multiplied by the gain (the Miller Effect), creating a massive low-pass filter that destroys the high-frequency bandwidth. To solve this, this project utilizes a Cascode topology. The bottom Common-Emitter transistor provides the raw transconductance (gain), while the top Common-Base transistor buffers the output, effectively shielding the input from the voltage swing. This eliminates the Miller capacitance, preserving the $40 GHz$ bandwidth. Furthermore, the Cascode stacks the voltage across two devices, protecting both SiGe HBTs from exceeding their individual breakdown limits while delivering the full $3V$ swing to the MZM.[^2][^3]
 
 
-#### 3.2 TIA
+### 3.2 TIA
 
 #### The Core Challenge
 While the TX Driver is a battle of brute-force high voltage, the RX Transimpedance Amplifier (TIA) is a battle of extreme sensitivity. The TIA must translate microscopic fluctuations in optical power into a clean, macroscopic electrical voltage for the $5nm$ ADC, all without adding enough thermal noise to destroy the $112 Gbps$ PAM4 eyes.
@@ -105,7 +105,7 @@ By utilizing Silicon-Germanium Heterojunction Bipolar Transistors (HBTs):
 
 ---
 
-### 6. Project Roadmap and Execution Phases
+## 6. Project Roadmap and Execution Phases
 
 This project follows a strict commercial silicon de-risking strategy. The architecture is split into a physical bare-die electrical validation phase, followed by a monolithic scaling phase.
 
