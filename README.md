@@ -20,7 +20,8 @@ This repository contains the system architecture and open-source EDA tapeout fil
 ## 2. The Data Journey: The Case for EPCD
 To understand why this specific SiGe architecture is required, one must trace the complete lifecycle of the data through the network rack.
 
-![ADC: Analog-to-digital converter, AFE: Analog Front-End, AGC: Automatic Gain Control, ASIC: Application-specific integrated circuit, CDR: Clock data recovery, DAC: Digital-to-analog converter, DSP: Digital signal processing, MZM: Mach–Zehnder modulator, PD: Photodiode, TIA: Transimpedance amplifier](./static/OC_system.png)
+![Fig1_Architecture](./static/OC_system.png)
+*Figure 1: ADC: Analog-to-digital converter, AFE: Analog Front-End, AGC: Automatic Gain Control, ASIC: Application-specific integrated circuit, CDR: Clock data recovery, DAC: Digital-to-analog converter, DSP: Digital signal processing, MZM: Mach–Zehnder modulator, PD: Photodiode, TIA: Transimpedance amplifier*
 
 
 
