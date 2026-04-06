@@ -3,7 +3,7 @@
 
 > **Technology Node:** IHP SG13G2 (130nm SiGe BiCMOS)  
 > **Target Tapeout:** OpenMPW Shuttle (October 2026)  
-> **Status:** Phase 1.II - Schematic Capture & AC/Transient Validation ($Xschem$ and $ngspice$)  
+> **Status:** Phase 1.II - Schematic Capture & AC/Transient Validation (`Xschem` / `Qucs-S` and `ngspice`)  
 
 ## Project Scope and Context
 Commercial 400G and 800G optical engines are massive multidisciplinary systems requiring dedicated ASIC DSP and Photonic layout teams. This repository does not claim to replace a commercial transceiver product. Instead this is an independent open source Silicon IP development project. The strict physical scope of Phase 1 is to architect, layout, and physically fabricate the standalone SiGe BiCMOS Analog Front End (TIA and Cascode Driver) via the IHP SG13G2 OpenMPW shuttle. The immediate objective is bare-die GSG RF characterization to validate the silicon topology and S-parameters, establishing a fully proven, physical IP foundation ready for future monolithic SG25H5EPIC scaling.
@@ -20,7 +20,7 @@ This repository contains the system architecture and open-source EDA tapeout fil
 ## 2. The Data Journey: The Case for EPCD
 To understand why this specific SiGe architecture is required, one must trace the complete lifecycle of the data through the network rack.
 
-![ADC: Analog-to-digital converter, AFE: Analog Front-End, AGC: Automatic Gain Control, ASIC: Application-specific integrated circuit, CDR: Clock data recovery, DAC: Digital-to-analog converter, DSP: Digital signal processing, MZM: Mach–Zehnder modulator, PD: Photodiode, TIA: Transimpedance amplifier](./static/OC_System.png)
+![ADC: Analog-to-digital converter, AFE: Analog Front-End, AGC: Automatic Gain Control, ASIC: Application-specific integrated circuit, CDR: Clock data recovery, DAC: Digital-to-analog converter, DSP: Digital signal processing, MZM: Mach–Zehnder modulator, PD: Photodiode, TIA: Transimpedance amplifier](./static/OC_system.png)
 
 
 
